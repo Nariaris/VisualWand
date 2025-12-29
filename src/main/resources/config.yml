@@ -1,0 +1,71 @@
+# VisualWand Configuration
+
+# Language settings (en = English, pl = Polish)
+language: en
+
+# Wand settings
+wand:
+  # Material for the Architect's Wand
+  material: BLAZE_ROD
+  # Display name (supports color codes)
+  name: "&6✦ &eRóżdżka Architekta &6✦"
+  # Lore lines
+  lore:
+    - "&7"
+    - "&fPPM na powietrze &8→ &aTwórz obiekty"
+    - "&fPPM na obiekt &8→ &bEdytuj obiekt"
+    - "&fShift + PPM &8→ &cUsuń obiekt"
+    - "&7"
+    - "&8Plugin by MiniGames.Cafe"
+
+# Gizmo settings
+gizmo:
+  # Particle density (higher = more particles)
+  particle-density: 20
+  # Gizmo size
+  size: 1.5
+  # Update interval in ticks (lower = smoother but more CPU)
+  update-interval: 2
+  # Colors (RGB)
+  colors:
+    x-axis: [255, 0, 0]      # Red
+    y-axis: [0, 255, 0]      # Green
+    z-axis: [0, 0, 255]      # Blue
+    scale: [255, 255, 0]     # Yellow
+    rotation: [255, 0, 255]  # Magenta
+
+# Editor settings
+editor:
+  # Maximum distance for ray-tracing (in blocks)
+  max-distance: 50
+  # Sensitivity for transformations
+  move-sensitivity: 0.1
+  rotate-sensitivity: 5.0
+  scale-sensitivity: 0.05
+
+# Animation settings
+animations:
+  # Default tick rate for animations
+  tick-rate: 2
+  # Presets
+  presets:
+    slow-rotation:
+      type: ROTATION
+      speed: 1.0
+      axis: Y
+    levitation:
+      type: LEVITATION
+      height: 0.5
+      speed: 0.02
+    pulsing:
+      type: SCALE
+      min-scale: 0.9
+      max-scale: 1.1
+      speed: 0.01
+
+# Storage settings
+storage:
+  # Auto-save interval in minutes (0 = disabled)
+  auto-save-interval: 5
+  # Save displays on server stop
+  save-on-stop: true
