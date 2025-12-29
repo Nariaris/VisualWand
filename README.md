@@ -157,7 +157,7 @@ animations:
 ## 📝 Changelog
 
 ### v231.11.3
-- 🎉 Initial release!
+- 🎉 Initial public release!
 - ✨ Block Display, Item Display, Text Display
 - 🔧 Gizmo system with particles
 - 🎬 3 animation types
@@ -329,7 +329,7 @@ animations:
 ## 📝 Historia zmian
 
 ### v231.11.3
-- 🎉 Pierwsza wersja!
+- 🎉 Pierwsza wersja publiczna!
 - ✨ Block Display, Item Display, Text Display
 - 🔧 System Gizmo z particles
 - 🎬 3 typy animacji
@@ -344,9 +344,9 @@ animations:
 
 ## 🤝 Issues / Problemy
 
-1
+Issue reporting and contact: https://nariaris.com/VisualWand
 
-2
+Zgłaszanie błędów oraz kontakt: https://nariaris.com/VisualWand
 
 ## 📄 License / Licencja
 
