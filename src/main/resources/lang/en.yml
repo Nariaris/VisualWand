@@ -181,3 +181,126 @@ error-no-target: "&cYou're not looking at any object!"
 error-too-far: "&cObject is too far!"
 error-invalid-block: "&cInvalid block!"
 error-invalid-item: "&cInvalid item!"
+
+# Properties GUI - Common
+gui-prop-billboard: "&eBillboard: &f{value}"
+gui-prop-billboard-lore:
+  - "&7"
+  - "&fDetermines how object rotates towards player."
+  - "&7FIXED - Does not rotate"
+  - "&7VERTICAL - Rotates vertically"
+  - "&7HORIZONTAL - Rotates horizontally"
+  - "&7CENTER - Always faces the player"
+  - "&7"
+  - "&eClick to change!"
+
+gui-prop-glow: "&eGlow"
+gui-prop-glow-lore:
+  - "&7"
+  - "&fSet object glow color."
+  - "&7"
+  - "&eClick to toggle!"
+
+gui-prop-view-range: "&eView Range: &f{value}"
+gui-prop-view-range-lore:
+  - "&7"
+  - "&fHow far the object is visible."
+  - "&7"
+  - "&eLMB: +0.5 | RMB: -0.5"
+
+gui-prop-shadow: "&eShadow: &f{value}"
+gui-prop-shadow-lore:
+  - "&7"
+  - "&fShadow radius under the object."
+  - "&7"
+  - "&eLMB: +0.1 | RMB: -0.1"
+
+gui-prop-brightness: "&eBrightness"
+gui-prop-brightness-lore:
+  - "&7"
+  - "&fSet custom object brightness."
+  - "&7Current: {value}"
+  - "&7"
+  - "&eLMB: +1 | RMB: -1 | Shift: Reset"
+
+# Properties GUI - Block Display
+gui-prop-change-block: "&eChange Block"
+gui-prop-change-block-lore:
+  - "&7"
+  - "&fCurrent: &e{value}"
+  - "&7"
+  - "&eClick to change!"
+
+# Properties GUI - Item Display
+gui-prop-change-item: "&eChange Item"
+gui-prop-change-item-lore:
+  - "&7"
+  - "&fCurrent: &e{value}"
+  - "&7"
+  - "&eClick to change!"
+
+gui-prop-transform: "&eTransform: &f{value}"
+gui-prop-transform-lore:
+  - "&7"
+  - "&fHow the item is displayed."
+  - "&7NONE, THIRDPERSON, FIRSTPERSON,"
+  - "&7HEAD, GUI, GROUND, FIXED"
+  - "&7"
+  - "&eClick to change!"
+
+gui-prop-cmd: "&eCustom Model Data: &f{value}"
+gui-prop-cmd-lore:
+  - "&7"
+  - "&fFor custom models from Resource Pack."
+  - "&7"
+  - "&eClick to set!"
+
+# Properties GUI - Text Display
+gui-prop-change-text: "&eChange Text"
+gui-prop-change-text-lore:
+  - "&7"
+  - "&fClick and type new text in chat."
+  - "&7"
+  - "&eClick to change!"
+
+gui-prop-text-color: "&eText Color"
+gui-prop-text-color-lore:
+  - "&7"
+  - "&fChange text color and formatting."
+  - "&7"
+  - "&eClick to open!"
+
+gui-prop-background: "&eBackground: &f{value}"
+gui-prop-background-lore:
+  - "&7"
+  - "&fToggle text background."
+  - "&7"
+  - "&eClick to toggle!"
+
+gui-prop-see-through: "&eSee Through: &f{value}"
+gui-prop-see-through-lore:
+  - "&7"
+  - "&fWhether text is visible through blocks."
+  - "&7"
+  - "&eClick to toggle!"
+
+gui-prop-line-width: "&eLine Width: &f{value}"
+gui-prop-line-width-lore:
+  - "&7"
+  - "&fMaximum line width of text."
+  - "&7"
+  - "&eLMB: +10 | RMB: -10"
+
+gui-prop-text-opacity: "&eText Opacity"
+gui-prop-text-opacity-lore:
+  - "&7"
+  - "&fSet text opacity."
+  - "&7"
+  - "&eLMB: +10 | RMB: -10"
+
+# Common values
+value-enabled: "Enabled"
+value-disabled: "Disabled"
+value-yes: "Yes"
+value-no: "No"
+value-auto: "Auto"

@@ -6,7 +6,7 @@
 
     <groupId>cafe.minigames</groupId>
     <artifactId>VisualWand</artifactId>
-    <version>231.11.3</version>
+    <version>231.12.0</version>
     <packaging>jar</packaging>
 
     <name>VisualWand</name>

@@ -54,65 +54,47 @@ public class PropertiesMenuGUI extends BaseGUI {
         Display.Billboard currentBillboard = display.getBillboard();
         inventory.setItem(10, createItem(
             Material.PLAYER_HEAD,
-            "&eBillboard: &f" + currentBillboard.name(),
-            "&7",
-            "&fOkreśla jak obiekt obraca się w stronę gracza.",
-            "&7FIXED - Nie obraca się",
-            "&7VERTICAL - Obraca się pionowo",
-            "&7HORIZONTAL - Obraca się poziomo",
-            "&7CENTER - Zawsze patrzy na gracza",
-            "&7",
-            "&eKliknij aby zmienić!"));
+            plugin.getLang().get("gui-prop-billboard", "value", currentBillboard.name()),
+            plugin.getLang().getColoredList("gui-prop-billboard-lore")));
         
         // Glow color
         inventory.setItem(11, createItem(
             Material.GLOWSTONE_DUST,
-            "&ePoświata",
-            "&7",
-            "&fUstaw kolor poświaty obiektu.",
-            "&7",
-            "&eKliknij aby przełączyć!"));
+            plugin.getLang().get("gui-prop-glow"),
+            plugin.getLang().getColoredList("gui-prop-glow-lore")));
         
         // View range
         inventory.setItem(12, createItem(
             Material.SPYGLASS,
-            "&eZasięg widoczności: &f" + display.getViewRange(),
-            "&7",
-            "&fJak daleko obiekt jest widoczny.",
-            "&7",
-            "&eLPM: +0.5 | PPM: -0.5"));
+            plugin.getLang().get("gui-prop-view-range", "value", display.getViewRange()),
+            plugin.getLang().getColoredList("gui-prop-view-range-lore")));
         
         // Shadow radius
         inventory.setItem(13, createItem(
             Material.BLACK_CONCRETE,
-            "&eCień: &f" + display.getShadowRadius(),
-            "&7",
-            "&fPromień cienia pod obiektem.",
-            "&7",
-            "&eLPM: +0.1 | PPM: -0.1"));
+            plugin.getLang().get("gui-prop-shadow", "value", display.getShadowRadius()),
+            plugin.getLang().getColoredList("gui-prop-shadow-lore")));
         
         // Brightness
+        String brightnessValue = display.getBrightness() != null ? 
+            "Block: " + display.getBrightness().getBlockLight() + 
+            ", Sky: " + display.getBrightness().getSkyLight() : plugin.getLang().get("value-auto");
         inventory.setItem(14, createItem(
             Material.LANTERN,
-            "&eJasność",
-            "&7",
-            "&fUstaw własną jasność obiektu.",
-            "&7Aktualna: " + (display.getBrightness() != null ? 
-                "Block: " + display.getBrightness().getBlockLight() + 
-                ", Sky: " + display.getBrightness().getSkyLight() : "Auto"),
-            "&7",
-            "&eLPM: +1 | PPM: -1 | Shift: Reset"));
+            plugin.getLang().get("gui-prop-brightness"),
+            plugin.getLang().getColoredList("gui-prop-brightness-lore").stream()
+                .map(s -> s.replace("{value}", brightnessValue))
+                .toList()));
     }
 
     private void addBlockDisplayProperties(BlockDisplay blockDisplay) {
         // Change block
         inventory.setItem(20, createItem(
             Material.BRICKS,
-            "&eZmień blok",
-            "&7",
-            "&fAktualny: &e" + blockDisplay.getBlock().getMaterial().name(),
-            "&7",
-            "&eKliknij aby zmienić!"));
+            plugin.getLang().get("gui-prop-change-block"),
+            plugin.getLang().getColoredList("gui-prop-change-block-lore").stream()
+                .map(s -> s.replace("{value}", blockDisplay.getBlock().getMaterial().name()))
+                .toList()));
     }
 
     private void addItemDisplayProperties(ItemDisplay itemDisplay) {
@@ -122,22 +104,16 @@ public class PropertiesMenuGUI extends BaseGUI {
         
         inventory.setItem(20, createItem(
             displayMat,
-            "&eZmień przedmiot",
-            "&7",
-            "&fAktualny: &e" + displayMat.name(),
-            "&7",
-            "&eKliknij aby zmienić!"));
+            plugin.getLang().get("gui-prop-change-item"),
+            plugin.getLang().getColoredList("gui-prop-change-item-lore").stream()
+                .map(s -> s.replace("{value}", displayMat.name()))
+                .toList()));
         
         // Display transform
         inventory.setItem(21, createItem(
             Material.ARMOR_STAND,
-            "&eTransformacja: &f" + itemDisplay.getItemDisplayTransform().name(),
-            "&7",
-            "&fJak przedmiot jest wyświetlany.",
-            "&7NONE, THIRDPERSON, FIRSTPERSON,",
-            "&7HEAD, GUI, GROUND, FIXED",
-            "&7",
-            "&eKliknij aby zmienić!"));
+            plugin.getLang().get("gui-prop-transform", "value", itemDisplay.getItemDisplayTransform().name()),
+            plugin.getLang().getColoredList("gui-prop-transform-lore")));
         
         // Custom Model Data
         int cmd = 0;
@@ -150,73 +126,51 @@ public class PropertiesMenuGUI extends BaseGUI {
         
         inventory.setItem(22, createItem(
             Material.COMMAND_BLOCK,
-            "&eCustom Model Data: &f" + cmd,
-            "&7",
-            "&fDla niestandardowych modeli z Resource Pack.",
-            "&7",
-            "&eKliknij aby ustawić!"));
+            plugin.getLang().get("gui-prop-cmd", "value", cmd),
+            plugin.getLang().getColoredList("gui-prop-cmd-lore")));
     }
 
     private void addTextDisplayProperties(TextDisplay textDisplay) {
-        String lang = plugin.getLang().getCurrentLanguage();
-        boolean isPl = lang.equals("pl");
-        
         // Change text
         inventory.setItem(20, createItem(
             Material.OAK_SIGN,
-            isPl ? "&eZmień tekst" : "&eChange Text",
-            "&7",
-            isPl ? "&fKliknij i wpisz nowy tekst na chacie." : "&fClick and type new text in chat.",
-            "&7",
-            isPl ? "&eKliknij aby zmienić!" : "&eClick to change!"));
+            plugin.getLang().get("gui-prop-change-text"),
+            plugin.getLang().getColoredList("gui-prop-change-text-lore")));
         
-        // Text color - NEW!
+        // Text color
         inventory.setItem(21, createItem(
             Material.ORANGE_DYE,
-            isPl ? "&eKolor tekstu" : "&eText Color",
-            "&7",
-            isPl ? "&fZmień kolor i formatowanie tekstu." : "&fChange text color and formatting.",
-            "&7",
-            isPl ? "&eKliknij aby otworzyć!" : "&eClick to open!"));
+            plugin.getLang().get("gui-prop-text-color"),
+            plugin.getLang().getColoredList("gui-prop-text-color-lore")));
         
         // Background toggle
         boolean hasBackground = textDisplay.getBackgroundColor() != null && 
             textDisplay.getBackgroundColor().getAlpha() > 0;
+        String bgStatus = hasBackground ? plugin.getLang().get("value-enabled") : plugin.getLang().get("value-disabled");
         
         inventory.setItem(22, createItem(
             hasBackground ? Material.BLACK_STAINED_GLASS : Material.GLASS,
-            "&e" + (isPl ? "Tło" : "Background") + ": &f" + (hasBackground ? (isPl ? "Włączone" : "Enabled") : (isPl ? "Wyłączone" : "Disabled")),
-            "&7",
-            isPl ? "&fPrzełącz tło tekstu." : "&fToggle text background.",
-            "&7",
-            isPl ? "&eKliknij aby przełączyć!" : "&eClick to toggle!"));
+            plugin.getLang().get("gui-prop-background", "value", bgStatus),
+            plugin.getLang().getColoredList("gui-prop-background-lore")));
         
         // See through
+        String seeStatus = textDisplay.isSeeThrough() ? plugin.getLang().get("value-yes") : plugin.getLang().get("value-no");
         inventory.setItem(23, createItem(
             Material.GLASS_PANE,
-            "&e" + (isPl ? "Widoczny przez bloki" : "See Through") + ": &f" + (textDisplay.isSeeThrough() ? (isPl ? "Tak" : "Yes") : (isPl ? "Nie" : "No")),
-            "&7",
-            isPl ? "&fCzy tekst jest widoczny przez bloki." : "&fWhether text is visible through blocks.",
-            "&7",
-            isPl ? "&eKliknij aby przełączyć!" : "&eClick to toggle!"));
+            plugin.getLang().get("gui-prop-see-through", "value", seeStatus),
+            plugin.getLang().getColoredList("gui-prop-see-through-lore")));
         
         // Line width
         inventory.setItem(24, createItem(
             Material.PAPER,
-            "&e" + (isPl ? "Szerokość linii" : "Line Width") + ": &f" + textDisplay.getLineWidth(),
-            "&7",
-            isPl ? "&fMaksymalna szerokość linii tekstu." : "&fMaximum line width of text.",
-            "&7",
-            "&eLPM: +10 | PPM: -10"));
+            plugin.getLang().get("gui-prop-line-width", "value", textDisplay.getLineWidth()),
+            plugin.getLang().getColoredList("gui-prop-line-width-lore")));
         
         // Text opacity
         inventory.setItem(25, createItem(
             Material.TINTED_GLASS,
-            isPl ? "&ePrzezroczystość tekstu" : "&eText Opacity",
-            "&7",
-            isPl ? "&fUstaw przezroczystość tekstu." : "&fSet text opacity.",
-            "&7",
-            "&eLPM: +10 | PPM: -10"));
+            plugin.getLang().get("gui-prop-text-opacity"),
+            plugin.getLang().getColoredList("gui-prop-text-opacity-lore")));
     }
 
     @Override

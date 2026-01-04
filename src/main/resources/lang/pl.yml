@@ -182,3 +182,126 @@ error-no-target: "&cNie patrzysz na żaden obiekt!"
 error-too-far: "&cObiekt jest za daleko!"
 error-invalid-block: "&cNieprawidłowy blok!"
 error-invalid-item: "&cNieprawidłowy przedmiot!"
+
+# Properties GUI - Common
+gui-prop-billboard: "&eBillboard: &f{value}"
+gui-prop-billboard-lore:
+  - "&7"
+  - "&fOkreśla jak obiekt obraca się w stronę gracza."
+  - "&7FIXED - Nie obraca się"
+  - "&7VERTICAL - Obraca się pionowo"
+  - "&7HORIZONTAL - Obraca się poziomo"
+  - "&7CENTER - Zawsze patrzy na gracza"
+  - "&7"
+  - "&eKliknij aby zmienić!"
+
+gui-prop-glow: "&ePoświata"
+gui-prop-glow-lore:
+  - "&7"
+  - "&fUstaw kolor poświaty obiektu."
+  - "&7"
+  - "&eKliknij aby przełączyć!"
+
+gui-prop-view-range: "&eZasięg widoczności: &f{value}"
+gui-prop-view-range-lore:
+  - "&7"
+  - "&fJak daleko obiekt jest widoczny."
+  - "&7"
+  - "&eLPM: +0.5 | PPM: -0.5"
+
+gui-prop-shadow: "&eCień: &f{value}"
+gui-prop-shadow-lore:
+  - "&7"
+  - "&fPromień cienia pod obiektem."
+  - "&7"
+  - "&eLPM: +0.1 | PPM: -0.1"
+
+gui-prop-brightness: "&eJasność"
+gui-prop-brightness-lore:
+  - "&7"
+  - "&fUstaw własną jasność obiektu."
+  - "&7Aktualna: {value}"
+  - "&7"
+  - "&eLPM: +1 | PPM: -1 | Shift: Reset"
+
+# Properties GUI - Block Display
+gui-prop-change-block: "&eZmień blok"
+gui-prop-change-block-lore:
+  - "&7"
+  - "&fAktualny: &e{value}"
+  - "&7"
+  - "&eKliknij aby zmienić!"
+
+# Properties GUI - Item Display
+gui-prop-change-item: "&eZmień przedmiot"
+gui-prop-change-item-lore:
+  - "&7"
+  - "&fAktualny: &e{value}"
+  - "&7"
+  - "&eKliknij aby zmienić!"
+
+gui-prop-transform: "&eTransformacja: &f{value}"
+gui-prop-transform-lore:
+  - "&7"
+  - "&fJak przedmiot jest wyświetlany."
+  - "&7NONE, THIRDPERSON, FIRSTPERSON,"
+  - "&7HEAD, GUI, GROUND, FIXED"
+  - "&7"
+  - "&eKliknij aby zmienić!"
+
+gui-prop-cmd: "&eCustom Model Data: &f{value}"
+gui-prop-cmd-lore:
+  - "&7"
+  - "&fDla niestandardowych modeli z Resource Pack."
+  - "&7"
+  - "&eKliknij aby ustawić!"
+
+# Properties GUI - Text Display
+gui-prop-change-text: "&eZmień tekst"
+gui-prop-change-text-lore:
+  - "&7"
+  - "&fKliknij i wpisz nowy tekst na chacie."
+  - "&7"
+  - "&eKliknij aby zmienić!"
+
+gui-prop-text-color: "&eKolor tekstu"
+gui-prop-text-color-lore:
+  - "&7"
+  - "&fZmień kolor i formatowanie tekstu."
+  - "&7"
+  - "&eKliknij aby otworzyć!"
+
+gui-prop-background: "&eTło: &f{value}"
+gui-prop-background-lore:
+  - "&7"
+  - "&fPrzełącz tło tekstu."
+  - "&7"
+  - "&eKliknij aby przełączyć!"
+
+gui-prop-see-through: "&eWidoczny przez bloki: &f{value}"
+gui-prop-see-through-lore:
+  - "&7"
+  - "&fCzy tekst jest widoczny przez bloki."
+  - "&7"
+  - "&eKliknij aby przełączyć!"
+
+gui-prop-line-width: "&eSzerokość linii: &f{value}"
+gui-prop-line-width-lore:
+  - "&7"
+  - "&fMaksymalna szerokość linii tekstu."
+  - "&7"
+  - "&eLPM: +10 | PPM: -10"
+
+gui-prop-text-opacity: "&ePrzezroczystość tekstu"
+gui-prop-text-opacity-lore:
+  - "&7"
+  - "&fUstaw przezroczystość tekstu."
+  - "&7"
+  - "&eLPM: +10 | PPM: -10"
+
+# Common values
+value-enabled: "Włączone"
+value-disabled: "Wyłączone"
+value-yes: "Tak"
+value-no: "Nie"
+value-auto: "Auto"

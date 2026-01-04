@@ -4,6 +4,8 @@
 
 A plugin that allows players and administrators to create, edit, and animate Display Entities (Block Display, Item Display, Text Display) without typing complicated commands.
 
+**⚠️ Still in development, please report all bugs on our Discord or via GitHub!**
+
 ---
 
 ## ✨ Main Features
@@ -15,6 +17,8 @@ A plugin that allows players and administrators to create, edit, and animate Dis
 - RMB on an existing object opens the edit menu
 - Shift + RMB deletes the object
 
+![Tool](https://cdn.modrinth.com/data/cached_images/0b766122818bd6540b28292eb473b86ef405b923.png)
+
 ### 🔧 Transformation Gizmo (Killer Feature!)
 - Visual arrows made with particles around the object
 - **Red axis = X**, **Green axis = Y**, **Blue axis = Z**
@@ -24,10 +28,14 @@ A plugin that allows players and administrators to create, edit, and animate Dis
   - **Scale** - cubes to change size
 - Feels like working in a game engine (like Unity or Blender)!
 
+![Gizmo](https://cdn.modrinth.com/data/cached_images/741f8db2fcba91c1f1c574b1053278a48caa8539.jpeg)
+
 ### 🎨 Custom Model Data Support
 - Plugin automatically supports Resource Packs
 - Easy placement of custom furniture, hats, and decorations
 - No client-side mods required
+
+![CMD](https://cdn.modrinth.com/data/cached_images/2a2e4a22dc768e37ef851aab51fedda1cc427703_0.webp)
 
 ### ✨ Simple Animations
 - **Slow Rotation** - perfect for trophies and lootboxes
@@ -154,22 +162,6 @@ animations:
 
 ---
 
-## 📝 Changelog
-
-### v231.11.3
-- 🎉 Initial public release!
-- ✨ Block Display, Item Display, Text Display
-- 🔧 Gizmo system with particles
-- 🎬 3 animation types
-- 💾 Save and load objects
-- 🎨 Custom Model Data support
-- 🌐 Multi-language support (EN/PL)
-- 🔄 Language switching with `/vw lang`
-- ⟲ Rotation reset button
-- 🎨 Text color selection menu
-
----
-
 # VisualWand (Polski / Polish)
 
 **Edytor Display Entity w grze dla Paper**
@@ -187,6 +179,8 @@ Plugin typu "In-Game Editor" pozwalający graczom i administratorom tworzyć, ed
 - PPM na istniejący obiekt otwiera menu edycji
 - Shift + PPM usuwa obiekt
 
+![Tool](https://cdn.modrinth.com/data/cached_images/0b766122818bd6540b28292eb473b86ef405b923.png)
+
 ### 🔧 Gizmo Transformacji (Killer Feature!)
 - Wizualne strzałki zrobione z particles wokół obiektu
 - **Czerwona oś = X**, **Zielona oś = Y**, **Niebieska oś = Z**
@@ -196,10 +190,14 @@ Plugin typu "In-Game Editor" pozwalający graczom i administratorom tworzyć, ed
   - **Skalowanie** - kostki do zmiany rozmiaru
 - Daje wrażenie pracy w silniku gry (jak Unity czy Blender)!
 
+![Gizmo](https://cdn.modrinth.com/data/cached_images/741f8db2fcba91c1f1c574b1053278a48caa8539.jpeg)
+
 ### 🎨 Wsparcie dla Custom Model Data
 - Plugin automatycznie wspiera Resource Packi
 - Łatwe wstawianie niestandardowych mebli, czapek i dekoracji
 - Bez potrzeby modów po stronie klienta
+
+![CMD](https://cdn.modrinth.com/data/cached_images/2a2e4a22dc768e37ef851aab51fedda1cc427703_0.webp)
 
 ### ✨ Proste Animacje
 - **Powolny Obrót** - idealne dla trofeów i lootboxów
@@ -219,8 +217,8 @@ Plugin typu "In-Game Editor" pozwalający graczom i administratorom tworzyć, ed
 
 ## 📦 Instalacja
 
-1. Pobierz plik `.jar` z [Releases](https://github.com/your-repo/releases)
-2. Umieść w folderze `plugins/` serwera Paper 1.21.1
+1. Pobierz plik `.jar`
+2. Umieść w folderze `plugins/` serwera Paper
 3. Zrestartuj serwer
 4. Gotowe!
 
@@ -323,22 +321,6 @@ animations:
 
 - **Paper** (lub kompatybilny fork)
 - **Java 21** lub nowsza
-
----
-
-## 📝 Historia zmian
-
-### v231.11.3
-- 🎉 Pierwsza wersja publiczna!
-- ✨ Block Display, Item Display, Text Display
-- 🔧 System Gizmo z particles
-- 🎬 3 typy animacji
-- 💾 Zapis i wczytywanie obiektów
-- 🎨 Wsparcie dla Custom Model Data
-- 🌐 Wielojęzyczność (EN/PL)
-- 🔄 Zmiana języka komendą `/vw lang`
-- ⟲ Przycisk resetu obrotu
-- 🎨 Menu wyboru koloru tekstu
 
 ---
 
